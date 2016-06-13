@@ -1,0 +1,46 @@
+.bg-portifolio{
+	background: #bababa url('../images/portifolio_bg.png') repeat;	
+}
+
+.bg-portifolio .title{
+	color: black;
+ }
+
+.portifolio-center{
+	margin: 0 auto;
+	width: 60%;
+}
+
+.portifolio_content{
+	border: 1px solid black;
+	width: 200px;
+	height: 200px;
+	background-color: #dfdfdf;
+}
+
+.none{
+	width: 200px;
+    height: 200px;
+}
+
+.none img{
+	width: 75px;
+    margin: 0 auto;
+    position: absolute;
+    top: 55px;
+    left: 75px;
+    opacity: 0.7;
+}
+
+.inprogress{
+	background-color: #454343;
+	width: 100%;
+	height: 100%;
+}
+
+.inprogress img{
+	width: 150px;
+    height: 150px;
+    top: 25px;
+    left: 40px;
+}

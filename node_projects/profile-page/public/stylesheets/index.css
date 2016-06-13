@@ -1,0 +1,50 @@
+body {
+  font: 20px font-family: 'Calisto MT', 'Bookman Old Style', Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.bg-center{
+	padding: 0 100px;
+}
+
+.session{
+	padding-bottom: 3%;
+}
+
+.title{
+	text-decoration: underline;
+    color: #00858e;
+    margin-bottom: 65px;
+}
+
+footer{
+	background-color: #000;
+	color: #FFF;
+	font-size: 20px;
+}
+.bg-footer{
+	margin: 0 auto;
+	width: 35%;
+}
+
+footer .glyphicon-chevron-up{
+	color: #FFF;
+	padding: 10px;
+}
+
+footer a{
+	color: #FFF;
+}
+
+footer ul {
+	    list-style-type: none;
+}
+
+.contacts{
+	text-align: left;
+	font-size: 14px;
+	margin: 15px 0;
+}

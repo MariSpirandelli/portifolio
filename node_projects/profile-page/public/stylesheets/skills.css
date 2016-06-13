@@ -1,0 +1,14 @@
+.bg-skills{
+	background-color: #00858e;
+	color: #FFF!important;
+	font-size: 20px;
+	padding-top: 10px;
+}
+
+.bg-skills .title{
+	color: white;
+ }
+
+.coffe-time{
+	width: 50%;
+}
