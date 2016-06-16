@@ -31,9 +31,16 @@
     background-color: #000;
 }
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
-    background-color: #72ded9;
+    background-color: #000;
 }
 
+.navbar-default .navbar-toggle:focus .icon-bar, .navbar-default .navbar-toggle:hover .icon-bar{
+    background-color: #8BE4E0;
+}
+
+.navbar-header{
+    height: 50px;
+}
 .navbar-brand{
     width: 60px;
     height: 60px;
@@ -43,4 +50,11 @@
 .navbar-brand>img{
     width: 100%;
     height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    div#horizontalNavbar{
+        background-color: #00858e;
+        border-top: 1px solid #8e8e8e;
+    }
 }

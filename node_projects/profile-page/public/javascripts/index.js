@@ -27,3 +27,34 @@ app.controller('TranslateController', function($translate, $scope) {
     $translate.use(langKey);
   };
 });
+
+app.controller('NavController', function ($scope, $location) {
+    $scope.isCollapsed = true;
+    $scope.$on('$routeChangeSuccess', function () {
+        $scope.isCollapsed = true;
+    });
+
+    $scope.getClass = function (path) {
+	    if(path === '/') {
+	        if($location.path() === '/') {
+	            return "active";
+	        } else {
+	            return "";
+	        }
+	    }
+	 
+	    if ($location.path().substr(0, path.length) === path) {
+	    	// Store hash
+  			var hash = path.replace('/','#');
+			// Using jQuery's animate() method to add smooth page scroll
+		  	// The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+		  	$('html, body').animate({
+		    	scrollTop: $(hash).offset().top
+		  	}, 900);
+		  
+	        return "active";
+	    } else {
+	        return "";
+	    }
+	}
+});

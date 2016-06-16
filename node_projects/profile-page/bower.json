@@ -1,0 +1,32 @@
+{
+  "name": "profile-page",
+  "description": "landing page to be my portifolio's page",
+  "main": "index.ejs",
+  "authors": [
+    "mariannaspirandelli <mariannaspirandelli@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Marianna",
+    "Spirandelli",
+    "Portifolio",
+    "Perfil",
+    "Profile"
+  ],
+  "homepage": "https://github.com/MariSpirandelli/portifolio",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-translate-loader-static-files": "^2.11.0",
+    "angular-translate": "^2.11.0",
+    "bootstrap": "^3.3.6",
+    "flag-icon-css": "^2.3.1",
+    "angular-resource": "^1.5.6"
+  }
+}
