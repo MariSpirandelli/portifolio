@@ -1,22 +1,24 @@
 <link rel="stylesheet" href="../stylesheets/nav-bar.css">
-<nav ng-controller="NavController" class="navbar navbar-default" role="navigation">
-	<div class="container-fluid bg-center">
+<nav ng-controller="NavController" class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" ng-click="isCollapsed = !isCollapsed">
 				<span class="icon-bar"></span> 
 				<span class="icon-bar"></span>
         		<span class="icon-bar"></span>        
 			</button>
-			<a class="navbar-brand" href="#index"> 
-				<img class="img-responsive" alt="" src="../images/black_coffee.png">
+			<a class="navbar-brand" href="#/"> 
+				<img class="img-responsive" title="{{'HOME' | translate}}" src="../images/black_coffee.png">
 			</a>
 		</div>
-		<div id="horizontalNavbar" class="navbar-collapse" ng-class="isCollapsed ? 'collapse' : 'in'">
+		<div id="horizontalNavbar" class="navbar-collapse" ng-class="isCollapsed ? 'collapse' : 'in'" ng-controller="TranslateController">
 			<ul class="nav navbar-nav navbar-right">
 				<li id="li-about" ng-class="getClass('/about')"><a href="#about">{{"MENU.ABOUT" | translate}}</span></a></li>
 				<li id="li-portifolio" ng-class="getClass('/portifolio')"><a href="#portifolio">{{"MENU.PORTIFOLIO" | translate}}</a></li>
 				<li id="li-skills" ng-class="getClass('/skills')"><a href="#skills">{{"MENU.SKILLS" | translate}}</a></li>
 				<li id="li-contact" ng-class="getClass('/contact')"><a href="#contact">{{"MENU.CONTACT" | translate}}</a></li>
+				<li id="li-contact" class="flag-btn-align" ng-class="getClass('/contact')"> <button class="btn flag-btn flag-icon-background flag-icon-br" ng-click="changeLanguage('ptBr')"></button></li>
+				<li id="li-contact" class="flag-btn-align" ng-class="getClass('/contact')"><button class="btn flag-btn flag-icon-background flag-icon-gb" ng-click="changeLanguage('enUs')"></button></li>
 			</ul>
 		</div>
 	</div>

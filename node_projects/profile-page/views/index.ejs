@@ -3,7 +3,7 @@
   <title><%= title %></title>
   <meta charset="utf-8">
   <!-- to be responsive to mobile devices and to ensure proper rendering and touch zooming-->
-  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0," />
  <!-- Bootstrap -->
   <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css"> 
   <!-- FLAGS --> 
@@ -13,32 +13,27 @@
 </head>
 <body id="index">
 
-    <!-- jumbotron at the top of the page -->
-    <ng-include src="'../templates/jumbotron.html'"></ng-include>
+  <div class="content-fluid">
     <!-- navigation bar at the top of the page, collapsible on smaller screens -->
     <ng-include src="'../templates/nav-bar.html'"></ng-include>
-    <!-- PAGE CONTENT -->
-    <ng-include src="'../templates/about.html'"></ng-include>
     
-    <ng-include id="portifolio" src="'../templates/portifolio.html'"></ng-include>
-    
-    <div id="skills">
-      <ng-include src="'../templates/skills.html'"></ng-include>
+    <div class="ng-view-content">
+      <ng-view></ng-view>
     </div>
 
     <!-- Footer -->
     <ng-include src="'../templates/footer.html'"></ng-include>
-
+  </div>
   <!-- JS import -->
   <script type="text/javascript" src="../bower_components/angular/angular.min.js"></script>
   <script type="text/javascript" src="../bower_components/angular-resource/angular-resource.min.js"></script>
+  <script type="text/javascript" src="../bower_components/angular-route/angular-route.min.js"></script>
   <script type="text/javascript" src="../bower_components/angular-translate/angular-translate.min.js"></script>
   <script type="text/javascript" src="../bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
   <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <!-- CUSTOM -->
   <script type="text/javascript" src="../javascripts/index.js"></script>
-  <script type="text/javascript" src="../javascripts/nav-bar.js"></script>
 
 </body>
 </html>

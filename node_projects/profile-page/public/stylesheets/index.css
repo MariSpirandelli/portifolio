@@ -1,50 +1,83 @@
 body {
-  font: 20px font-family: 'Calisto MT', 'Bookman Old Style', Helvetica, Arial, sans-serif;
+  font-family: 'Calisto MT', 'Bookman Old Style', Helvetica, Arial, sans-serif;
+  background: url(../images/bg_img.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.bg-main{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
 }
 
 a {
   color: #00B7FF;
 }
 
-.bg-center{
-	padding: 0 100px;
+.main-title{
+	position: fixed;
+	right:0;
+	left: 0;
+	top:40%;
 }
 
-.session{
-	padding-bottom: 3%;
+.main-title img{
+	display: inline;
 }
 
 .title{
+	font-size: 48px;
+	font-weight: bold;
+	color: #FFF;
 	text-decoration: underline;
-    color: #00858e;
-    margin-bottom: 65px;
+}
+
+.transparency{
+	padding: 15px;
+	background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.5);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+
+.content{
+	width: 80%;
+    margin: 3% auto;
+}
+
+.ng-view-content{
+	width: 100%;    
+    position: absolute;
+    top:50px;
+    bottom: 50px;
 }
 
 footer{
-	background-color: #000;
-	color: #FFF;
-	font-size: 20px;
-}
-.bg-footer{
-	margin: 0 auto;
-	width: 35%;
+	padding: 10px 25px;
+	position: fixed;
+	bottom: 0;
+	right:0;
+	left: 0;
 }
 
-footer .glyphicon-chevron-up{
-	color: #FFF;
-	padding: 10px;
+footer img{
+	display: inline!important;
 }
 
-footer a{
-	color: #FFF;
+.social{
+	float: left;
 }
 
-footer ul {
-	    list-style-type: none;
+.social img{
+	height: 40px;
 }
 
-.contacts{
-	text-align: left;
-	font-size: 14px;
-	margin: 15px 0;
+.signature{
+	float: right;
+	height: 40px;
+
 }

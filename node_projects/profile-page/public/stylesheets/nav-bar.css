@@ -2,10 +2,10 @@
     font-family: 'Calisto MT', 'Bookman Old Style', Georgia, Arial, sans-serif;
     font-weight: bold;
     margin-bottom: 0;
-    background-color: #00858e;
+    background-color: #FFF;
     z-index: 9999;
     border: 0;
-    font-size: 14px !important;
+    font-size: 20px !important;
     line-height: 1.42857143 !important;
     letter-spacing: 4px;
     border-radius: 0;
@@ -18,8 +18,11 @@
 }
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #8BE4E0 !important;
-    background-color: #000 !important;
+    text-decoration: underline;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-color: transparent!important;
 }
 
 .navbar-default .navbar-toggle {
@@ -35,7 +38,7 @@
 }
 
 .navbar-default .navbar-toggle:focus .icon-bar, .navbar-default .navbar-toggle:hover .icon-bar{
-    background-color: #8BE4E0;
+    background-color: #FFF;
 }
 
 .navbar-header{
@@ -52,9 +55,22 @@
     height: 100%;
 }
 
+.flag-btn-align{
+    float: right;
+    margin: 15px 10 15px 0px;
+}
+
+.flag-btn{
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
 @media screen and (max-width: 768px) {
     div#horizontalNavbar{
-        background-color: #00858e;
+        background-color: #FFF;
         border-top: 1px solid #8e8e8e;
     }
 }

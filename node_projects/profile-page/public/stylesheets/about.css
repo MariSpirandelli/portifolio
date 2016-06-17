@@ -1,7 +1,12 @@
 .my-photo{
-	width: 50%;
+	width: 100%;
+}
+
+.about-content{
+	margin-top: 5%;
+    float: left;
 }
 
 .about-text{
-	font-size: 20px;
+	font-size: 24px;
 }

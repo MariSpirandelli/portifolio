@@ -1,21 +1,14 @@
-.bg-portifolio{
-	background: #bababa url('../images/portifolio_bg.png') repeat;	
+.portifolio-content{
+	margin: 5% auto;
+    width: 60%;
 }
 
-.bg-portifolio .title{
-	color: black;
- }
-
-.portifolio-center{
-	margin: 0 auto;
-	width: 60%;
-}
-
-.portifolio_content{
+.portifolio-slots{
 	border: 1px solid black;
 	width: 200px;
 	height: 200px;
 	background-color: #dfdfdf;
+	margin: 3% 0;
 }
 
 .none{

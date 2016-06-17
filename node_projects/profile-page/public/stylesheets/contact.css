@@ -1,0 +1,31 @@
+.contact-content{
+    width: 60%;
+    margin: 5% auto;
+    font-weight: bold;
+    position: relative;
+}
+
+.greeting-align{
+    margin-top: 5%;
+}
+
+.text-bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.img-bottom{
+    float: right;
+}
+
+.coffe-time{
+    width: 70%;
+    float: right;
+}
+
+@media screen and (max-width: 780px) {
+    .text-bottom{
+        position: relative;
+    }
+}

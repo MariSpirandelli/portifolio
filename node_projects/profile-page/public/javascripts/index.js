@@ -1,4 +1,4 @@
-var app = angular.module("app",[ 'ngResource','pascalprecht.translate']);
+var app = angular.module("app",[ 'ngResource', 'ngRoute','pascalprecht.translate']);
 
 // Use this method to register work which needs to be performed on module
 // loading
@@ -22,12 +22,18 @@ app.config(function($resourceProvider, $translateProvider) {
 	// });
 });
 
+//---------------
+// Page Translation
+//---------------
 app.controller('TranslateController', function($translate, $scope) {
   $scope.changeLanguage = function (langKey) {
     $translate.use(langKey);
   };
 });
 
+//---------------
+// Set menu as active
+//---------------
 app.controller('NavController', function ($scope, $location) {
     $scope.isCollapsed = true;
     $scope.$on('$routeChangeSuccess', function () {
@@ -43,18 +49,32 @@ app.controller('NavController', function ($scope, $location) {
 	        }
 	    }
 	 
-	    if ($location.path().substr(0, path.length) === path) {
-	    	// Store hash
-  			var hash = path.replace('/','#');
-			// Using jQuery's animate() method to add smooth page scroll
-		  	// The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-		  	$('html, body').animate({
-		    	scrollTop: $(hash).offset().top
-		  	}, 900);
-		  
+	    if ($location.path().substr(0, path.length) === path) {		  
 	        return "active";
 	    } else {
 	        return "";
 	    }
 	}
 });
+
+//---------------
+// Routes
+//---------------
+app.config(['$routeProvider', function ($routeProvider) {
+  	$routeProvider
+    	.when('/', {
+      		templateUrl: '../templates/home.html',
+    	})
+    	.when('/about', {
+      		templateUrl: '../templates/about.html',
+   		})
+   		.when('/portifolio', {
+      		templateUrl: '../templates/portifolio.html',
+   		})
+   		.when('/skills', {
+      		templateUrl: '../templates/skills.html',
+   		})
+   		.when('/contact', {
+      		templateUrl: '../templates/contact.html',
+   		});
+}]);
