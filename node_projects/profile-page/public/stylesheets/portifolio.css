@@ -37,3 +37,9 @@
     top: 25px;
     left: 40px;
 }
+
+@media screen and (max-width: 768px) {
+	.portifolio-content{
+		margin-bottom: 70px;
+	}
+}

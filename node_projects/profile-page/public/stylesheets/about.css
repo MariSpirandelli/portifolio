@@ -8,5 +8,11 @@
 }
 
 .about-text{
-	font-size: 24px;
+	font-size: 3.4em;
+}
+
+@media screen and (max-width: 768px) {
+	.about-content{
+		margin-bottom: 70px;
+	}
 }

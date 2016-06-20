@@ -1,18 +1,19 @@
 .contact-content{
     width: 60%;
     margin: 5% auto;
-    font-weight: bold;
     position: relative;
 }
 
-.greeting-align{
-    margin-top: 5%;
+.contact-content h3{
+    font-weight: bold!important;
 }
 
 .text-bottom{
     position: absolute;
+    font-size: 3.4em;
     bottom: 0;
     left: 0;
+    margin-top: 5%;
 }
 
 .img-bottom{
@@ -25,7 +26,11 @@
 }
 
 @media screen and (max-width: 780px) {
+    .contact-content{
+        margin-bottom: 70px;
+    }
     .text-bottom{
         position: relative;
+        word-break: break-word;
     }
 }
