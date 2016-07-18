@@ -28,9 +28,14 @@
 @media screen and (max-width: 780px) {
     .contact-content{
         margin-bottom: 70px;
+        width: 65%;
+    }
+    .contact-content h3{
+        font-size: 22px;
     }
     .text-bottom{
         position: relative;
         word-break: break-word;
+        font-size: 1.7em;
     }
 }
